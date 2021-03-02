@@ -1,3 +1,5 @@
+
+def call() {
 package com.mycompany.app;
 
 import java.io.ByteArrayOutputStream;
@@ -45,4 +47,5 @@ public class AppTest
         System.setOut(null);
     }
 
+}
 }
