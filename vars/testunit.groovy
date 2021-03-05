@@ -1,5 +1,4 @@
 
-def call() {
 
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
@@ -11,6 +10,9 @@ import static org.junit.Assert.*;
 /**
  * Unit test for simple App.
  */
+
+def call() {
+    
 public class AppTest
 {
 
