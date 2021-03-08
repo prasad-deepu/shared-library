@@ -1,4 +1,4 @@
-import sttaic com.mycompany.app.AppTest;
+import com.mycompany.app.AppTest;
 
 def call() {
     
