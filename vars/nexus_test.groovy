@@ -33,5 +33,5 @@ def call( ) {
                                 type: "pom"]
                             ]
                           )   
-                      mvn this,'deploy'
+                      mvn deploy
     }
