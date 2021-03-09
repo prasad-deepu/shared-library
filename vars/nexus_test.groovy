@@ -1,4 +1,5 @@
-def call {
+def call( ) {
+    
     
     script.sh { 
                     pom = readMavenPom file: "pom.xml";
