@@ -23,10 +23,10 @@ def call( ) {
                             repository: NEXUS_REPOSITORY,
                             credentialsId: NEXUS_CREDENTIAL_ID,
                             artifacts: [
-                                [artifactId: pom.artifactId,
+                                artifactId: pom.artifactId,
                                 classifier: '',
                                 file: artifactPath,
-                                type: jar],
+                                type: jar,
                                 artifactId: pom.artifactId
                             ]
                           )   
