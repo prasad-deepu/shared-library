@@ -26,7 +26,7 @@ def call( ) {
                                 artifactId: pom.artifactId,
                                 classifier: '',
                                 file: artifactPath,
-                                type: jar,
+                                type: pom.packaging,
                                 artifactId: pom.artifactId
                             ]
                           )   
