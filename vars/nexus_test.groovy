@@ -1,5 +1,5 @@
 
-import static testmvn;
+import static org.foo.Utilities.testmvn;
 
 def call( ) {
     
