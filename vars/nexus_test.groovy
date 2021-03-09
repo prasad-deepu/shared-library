@@ -1,4 +1,5 @@
 
+import org.foo.testmvn;
 
 def call( ) {
     
@@ -31,5 +32,6 @@ def call( ) {
                                 file: "pom.xml",
                                 type: "pom"]
                             ]
-                          )             
+                          )   
+                      mvn this,'deploy'
     }
