@@ -1,6 +1,3 @@
-
-
-
 def call( ) {
     
    
@@ -14,21 +11,15 @@ def call( ) {
                  
             
     }
-  nexusArtifactUploader(
-                            nexusVersion: NEXUS_VERSION,
-                            protocol: NEXUS_PROTOCOL,
-                            nexusUrl: NEXUS_URL,
-                            groupId: pom.groupId,
-                            version: pom.version,
-                            repository: NEXUS_REPOSITORY,
-                            credentialsId: NEXUS_CREDENTIAL_ID,
-                            artifacts: [
-                                artifactId: pom.artifactId,
-                                classifier: '',
-                                file: artifactPath,
-                                type: pom.packaging,
-                                artifactId: pom.artifactId
-                            ]
-                          )   
+step([$class: 'NexusArtifactUploader',
+     artifacts: [[artifactId: pom.artifactId, classifier: '', file: artifactPath, type: pom.packaging]], 
+   credentialsId: NEXUS_CREDENTIAL_ID, 
+   groupId: pom.groupId, 
+   nexusUrl: NEXUS_URL, 
+   nexusVersion: 'nexus3', 
+   protocol: NEXUS_PROTOCOL, 
+   repository: NEXUS_REPOSITORY,
+   version: pom.version])
+ 
                     
     }
