@@ -1,6 +1,6 @@
 class envtst implements Serializable {
   static methodA() {
-    def en = System.getenv().JAVA_HOME
+    def en = System.getenv().MYHOME
     return en
   }
 }
